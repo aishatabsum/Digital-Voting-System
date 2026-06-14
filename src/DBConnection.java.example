@@ -1,0 +1,28 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBConnection {
+   
+    // 1. The address of your database
+    private static final String URL = "jdbc:mysql://localhost:3306/YOUR_DATABASE";
+    // 2. Your MySQL credentials
+    private static final String USER = "your_read_only_user";
+    private static final String PASS = "ENTER_YOUR_PASSWORD_HERE"; // Enter your root password
+
+    private static Connection conn = null;
+
+    public static Connection getConnection() {
+        try {
+            if (conn == null || conn.isClosed()) {
+                conn = DriverManager.getConnection(URL, USER, PASS);
+                System.out.println("Bridge Connected!"); 
+            }
+        } catch (SQLException e) {
+            System.out.println("Bridge Failed: " + e.getMessage());
+        }
+
+        return conn;
+    }
+}
+
