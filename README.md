@@ -1,18 +1,13 @@
-## Getting Started
+# DeptVote- Digital Voting System for Uni-Departmental elections. 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A secure, desktop-based electronic voting terminal designed to digitize manual paper ballot processes. 
 
-## Folder Structure
+##  Features
+* **Voter Dashboard:** Secure login and digital ballot casting.
+* **Admin Control Panel:** Real-time results auditing and voter management.
+* **Database Integration:** Local data persistence with structured relational tables.
+* **DAO structure:** DAO structure applied for clean and organized database interaction.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🛠️ Tech Stack
+* **Language:** Java (Swing GUI)
+* **Database:** MySQL
